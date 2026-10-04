@@ -145,7 +145,7 @@ const academicWorks = [
         title: "Activity 2",
 
         description:
-            "Activity document file.",
+            "My Academic Activity.",
 
         file:
             "DCIT26_ Act 2.docx (1).pdf",
