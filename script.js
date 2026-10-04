@@ -142,7 +142,7 @@ const academicWorks = [
     {
         category: "activities",
 
-        title: "Activity Document",
+        title: "Activity 2",
 
         description:
             "Activity document file.",
