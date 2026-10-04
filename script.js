@@ -36,7 +36,7 @@ const academicWorks = [
         description:
             "My first quiz for this subject.",
 
-        file: "https://github.com/johndavidjavier83-a11y/jj/blob/main/quiz1.jpeg.JPG?raw=true"
+        file: "quiz1.jpeg.JPG?raw=true",
             
 
         type:
