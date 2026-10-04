@@ -135,7 +135,7 @@ const academicWorks = [
             "files/activity1.jpg",
 
         type:
-            "image"
+            "pdf"
     },
 
 
