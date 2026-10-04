@@ -36,11 +36,11 @@ const academicWorks = [
         description:
             "My first quiz for this subject.",
 
-        file:
-            "",
+        file: "quiz1.jpeg.JPG",
+            
 
         type:
-            "image"
+            "jpg"
     },
 
     {
