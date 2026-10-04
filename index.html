@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>My Academic Portfolio</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Background Animation -->
+    <div class="background">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+
+    <!-- NAVIGATION -->
+    <header class="navbar">
+        <div class="logo">MY<span>PORTFOLIO</span></div>
+
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#about">About Me</a>
+            <a href="#works">Academic Works</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+
+    <!-- HOME -->
+    <section id="home" class="hero">
+
+        <div class="hero-text">
+
+            <p class="small-title">WELCOME TO MY</p>
+
+            <h1>
+                Academic
+                <span>Portfolio</span>
+            </h1>
+
+            <p>
+                A collection of my academic achievements, quizzes,
+                examinations, activities, and projects.
+            </p>
+
+            <a href="#works" class="button">
+                View My Works
+            </a>
+
+        </div>
+
+        <div class="profile-card">
+
+            <!-- CHANGE profile.jpg TO YOUR PHOTO -->
+            <img src="images/profile.jpg" alt="My Profile">
+
+            <h2>John David Javier</h2>
+
+            <p>Computer Science Student</p>
+
+        </div>
+
+    </section>
+
+
+    <!-- ABOUT -->
+    <section id="about" class="section">
+
+        <div class="section-title">
+            <p>GET TO KNOW ME</p>
+            <h2>About <span>Me</span></h2>
+        </div>
+
+        <div class="about-container">
+
+            <div class="about-image">
+
+                <!-- CHANGE about.jpg TO YOUR PHOTO -->
+                <img src="images/about.jpg" alt="About Me">
+
+            </div>
+
+            <div class="about-text">
+
+                <h3>Hello! I'm <span>YOUR NAME</span></h3>
+
+                <p>
+                    I am a student passionate about learning,
+                    technology, programming, and developing
+                    useful systems. This portfolio contains
+                    some of my academic works and projects
+                    throughout my studies.
+                </p>
+
+                <div class="info">
+
+                    <div>
+                        <strong>Course</strong>
+                        <p>Computer Science</p>
+                    </div>
+
+                    <div>
+                        <strong>Section</strong>
+                        <p>YOUR SECTION</p>
+                    </div>
+
+                    <div>
+                        <strong>Student ID</strong>
+                        <p>YOUR STUDENT ID</p>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ACADEMIC WORKS -->
+    <section id="works" class="section works-section">
+
+        <div class="section-title">
+            <p>MY COLLECTION</p>
+            <h2>Academic <span>Works</span></h2>
+        </div>
+
+
+        <!-- CATEGORY BUTTONS -->
+
+        <div class="categories">
+
+            <button class="category active" data-category="quiz">
+                Quiz
+            </button>
+
+            <button class="category" data-category="longquiz">
+                Long Quiz
+            </button>
+
+            <button class="category" data-category="midterms">
+                Midterms
+            </button>
+
+            <button class="category" data-category="finals">
+                Finals
+            </button>
+
+            <button class="category" data-category="activities">
+                Activities
+            </button>
+
+            <button class="category" data-category="projects">
+                Projects
+            </button>
+
+        </div>
+
+
+        <!-- WORKS WILL APPEAR HERE -->
+
+        <div id="works-container" class="works-container"></div>
+
+    </section>
+
+
+    <!-- CONTACT -->
+    <section id="contact" class="section contact">
+
+        <div class="section-title">
+
+            <p>GET IN TOUCH</p>
+
+            <h2>Contact <span>Me</span></h2>
+
+        </div>
+
+        <div class="contact-card">
+
+            <h3>Thank you for visiting my portfolio.</h3>
+
+            <p>
+                You can contact me through the information below.
+            </p>
+
+            <div class="contact-info">
+
+                <p> johndavid.javier@cvsu.edu.ph</p>
+            </p>  09559941535</p>
+
+                <p> Silang Cavite, Philippines</p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- FOOTER -->
+    <footer>
+
+        <p>
+            © 2026 YOUR NAME | Academic Portfolio
+        </p>
+
+    </footer>
+
+
+    <!-- IMAGE / FILE VIEWER -->
+    <div id="viewer" class="viewer">
+
+        <div class="viewer-content">
+
+            <button id="closeViewer" class="close">
+                ×
+            </button>
+
+            <div id="viewerBody"></div>
+
+        </div>
+
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
