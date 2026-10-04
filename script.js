@@ -132,7 +132,7 @@ const academicWorks = [
             "My academic activity.",
 
         file:
-            "files/activity1.jpg",
+            
 
         type:
             "pdf"
