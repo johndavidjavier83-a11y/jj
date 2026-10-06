@@ -53,18 +53,19 @@ const academicWorks = [
 
         file:
             "QUIZ2.jpeg.JPG",
-
+       tyoe;
+            "image",
+               };
         
    
 
-      
-    },
    
+    
+               
    
-        type:
-            "image"
 
-       };
+
+       
     /* ==============================
        LONG QUIZ
     ============================== */
