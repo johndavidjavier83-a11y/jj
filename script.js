@@ -60,13 +60,13 @@ const academicWorks = [
       
     },
    
-         {
+   {
         category: "quiz",
 
         title: "Quiz 3",
 
         description:
-            "My second quiz.",
+            "My Third Quiz .",
 
         file:
             "files/quiz2.pdf",
@@ -74,7 +74,7 @@ const academicWorks = [
         type:
             "image"
 
-         };
+       };
     /* ==============================
        LONG QUIZ
     ============================== */
