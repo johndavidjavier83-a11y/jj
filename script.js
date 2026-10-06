@@ -147,7 +147,7 @@ const academicWorks = [
             "My Academic Activity.",
 
         file:
-            "files/DCIT26_ Act 2.docx (1).pdf",
+            "DCIT26_ Act 2.docx (1).pdf",
 
         type:
             "pdf"
