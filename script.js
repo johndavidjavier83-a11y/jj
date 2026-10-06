@@ -91,7 +91,7 @@ const academicWorks = [
             "My Midterm Examination.",
 
         file:
-            "files/Midterms.jpeg.JPG.jpg",
+            "Midterms.jpg",
 
         type:
             "image"
