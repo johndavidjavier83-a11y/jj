@@ -52,7 +52,7 @@ const academicWorks = [
             "My second quiz.",
 
         file:
-            "files/quiz2.pdf",
+            "QUIZ2.jpeg.JPG",
 
         type:
             "image"
