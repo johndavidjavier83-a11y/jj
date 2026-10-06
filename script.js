@@ -60,6 +60,19 @@ const academicWorks = [
       
     },
    
+         {
+        category: "quiz",
+
+        title: "Quiz 3",
+
+        description:
+            "My second quiz.",
+
+        file:
+            "files/quiz2.pdf",
+
+        type:
+            "image"
 
 
     /* ==============================
