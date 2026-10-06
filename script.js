@@ -54,23 +54,13 @@ const academicWorks = [
         file:
             "QUIZ2.jpeg.JPG",
 
-        type:
-            "image"
+        
+   
 
       
     },
    
-   {
-        category: "quiz",
-
-        title: "Quiz 3",
-
-        description:
-            "My Third Quiz .",
-
-        file:
-            "files/quiz2.pdf",
-
+   
         type:
             "image"
 
