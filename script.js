@@ -51,8 +51,8 @@ const academicWorks = [
             "My second quiz.",
 
         file:
-            "files/QUIZ2.jpeg.JPG",
-
+            
+           "QUIZ2.jpeg.JPG",
         type:
             "image"
     },
