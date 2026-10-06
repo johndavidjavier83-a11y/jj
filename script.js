@@ -55,7 +55,7 @@ const academicWorks = [
             "QUIZ2.jpeg.JPG",
        tyoe;
             "image"
-               };
+};           
         
    
 
