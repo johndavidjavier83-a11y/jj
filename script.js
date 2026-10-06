@@ -55,8 +55,11 @@ const academicWorks = [
             "files/quiz2.pdf",
 
         type:
-            "pdf"
+            "image"
+
+      
     },
+   
 
 
     /* ==============================
