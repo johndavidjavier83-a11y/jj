@@ -4,8 +4,7 @@
 
    HOW TO ADD YOUR WORK:
 
-   1. Put your image/file inside the "files"
-      folder.
+   1. Put your image/file inside the "files" folder.
 
    2. Add a new item below.
 
@@ -31,13 +30,13 @@ const academicWorks = [
     {
         category: "quiz",
 
-        title: "quiz 1",
+        title: "Quiz 1",
 
         description:
             "My first quiz for this subject.",
 
-        file: "quiz1.jpeg.JPG",
-            
+        file:
+            "files/quiz1.jpeg.JPG",
 
         type:
             "image"
@@ -52,20 +51,13 @@ const academicWorks = [
             "My second quiz.",
 
         file:
-            "QUIZ2.jpeg.JPG",
-       tyoe;
+            "files/QUIZ2.jpeg.JPG",
+
+        type:
             "image"
-};           
-        
-   
-
-   
-    
-               
-   
+    },
 
 
-       
     /* ==============================
        LONG QUIZ
     ============================== */
@@ -99,8 +91,7 @@ const academicWorks = [
             "My Midterm Examination.",
 
         file:
-           "Midterms.jpeg.JPG.jpg",
-            
+            "files/Midterms.jpeg.JPG.jpg",
 
         type:
             "image"
@@ -140,8 +131,8 @@ const academicWorks = [
             "My academic activity.",
 
         file:
-            
-"DCIT 26_ Activity 1.docx (1).pdf",
+            "files/DCIT 26_ Activity 1.docx (1).pdf",
+
         type:
             "pdf"
     },
@@ -156,7 +147,7 @@ const academicWorks = [
             "My Academic Activity.",
 
         file:
-            "DCIT26_ Act 2.docx (1).pdf",
+            "files/DCIT26_ Act 2.docx (1).pdf",
 
         type:
             "pdf"
@@ -255,7 +246,9 @@ function displayWorks(category) {
         let preview = "";
 
 
-        /* IMAGE */
+        /* ==============================
+           IMAGE
+        ============================== */
 
         if (work.type === "image") {
 
@@ -279,7 +272,9 @@ function displayWorks(category) {
         }
 
 
-        /* PDF */
+        /* ==============================
+           PDF
+        ============================== */
 
         else if (work.type === "pdf") {
 
@@ -298,6 +293,10 @@ function displayWorks(category) {
                         📄
                     </div>
 
+                    <p class="file-label">
+                        PDF Document
+                    </p>
+
                 </div>
 
             `;
@@ -305,7 +304,9 @@ function displayWorks(category) {
         }
 
 
-        /* OTHER FILE */
+        /* ==============================
+           OTHER FILE
+        ============================== */
 
         else {
 
@@ -317,12 +318,20 @@ function displayWorks(category) {
                         📁
                     </div>
 
+                    <p class="file-label">
+                        File
+                    </p>
+
                 </div>
 
             `;
 
         }
 
+
+        /* ==============================
+           CARD
+        ============================== */
 
         card.innerHTML = `
 
@@ -371,7 +380,9 @@ buttons.forEach(button => {
         () => {
 
             buttons.forEach(btn => {
+
                 btn.classList.remove("active");
+
             });
 
 
@@ -407,6 +418,10 @@ function openViewer(file, type) {
     viewerBody.innerHTML = "";
 
 
+    /* ==============================
+       IMAGE VIEWER
+    ============================== */
+
     if (type === "image") {
 
         viewerBody.innerHTML = `
@@ -420,6 +435,11 @@ function openViewer(file, type) {
 
     }
 
+
+    /* ==============================
+       PDF VIEWER
+    ============================== */
+
     else if (type === "pdf") {
 
         viewerBody.innerHTML = `
@@ -432,6 +452,11 @@ function openViewer(file, type) {
         `;
 
     }
+
+
+    /* ==============================
+       OTHER FILE
+    ============================== */
 
     else {
 
@@ -451,6 +476,7 @@ function openViewer(file, type) {
                 <a
                     href="${file}"
                     target="_blank"
+                    rel="noopener noreferrer"
                     style="color:#4dc3ff"
                 >
                     Open File
@@ -483,6 +509,10 @@ closeViewer.addEventListener(
     }
 );
 
+
+/* =========================================
+   CLOSE WHEN CLICKING OUTSIDE
+========================================= */
 
 viewer.addEventListener(
     "click",
