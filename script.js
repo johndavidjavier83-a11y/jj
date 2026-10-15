@@ -71,7 +71,7 @@ const academicWorks = [
             "Long Quiz academic work.",
 
         file:
-            "files/longquiz1.jpg",
+            
 
         type:
             "image"
