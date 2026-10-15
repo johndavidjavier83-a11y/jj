@@ -57,6 +57,21 @@ const academicWorks = [
             "image"
     },
 
+    {
+        category: "quiz",
+
+        title: "Quiz 3",
+
+        description:
+            "My third quiz for this subject.",
+
+        file:
+            "QUIZ3.jpeg.JPG",
+
+        type:
+            "image"
+    },
+```
 
     /* ==============================
        LONG QUIZ
