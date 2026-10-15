@@ -36,16 +36,16 @@ const academicWorks = [
         category: "quiz",
         title: "Quiz 2",
         description: "My second quiz.",
-        file: "files/QUIZ2.jpeg.JPG",
-        type: "image"
+        file: "QUIZ2.jpeg.JPG",
+        type: "image",
     },
 
     {
         category: "quiz",
         title: "Quiz 3",
         description: "My third quiz for this subject.",
-        file: "files/Quiz3.jpeg.jpg",
-        type: "image"
+        file: "Quiz3.jpeg.jpg",
+        type: "image",
     },
 
 
@@ -57,8 +57,8 @@ const academicWorks = [
         category: "longquiz",
         title: "Long Quiz 1",
         description: "Long Quiz academic work.",
-        file: "files/LongQuiz1.jpg.jpg",
-        type: "image"
+        file: "LongQuiz1.jpg.jpg",
+        type: "image",
     },
 
 
@@ -70,8 +70,8 @@ const academicWorks = [
         category: "midterms",
         title: "Midterm Examination",
         description: "My Midterm Examination.",
-        file: "files/Midterms.jpg",
-        type: "image"
+        file: "Midterms.jpg",
+        type: "image",
     },
 
 
@@ -96,16 +96,16 @@ const academicWorks = [
         category: "activities",
         title: "Activity 1",
         description: "My academic activity.",
-        file: "files/DCIT 26_ Activity 1.docx (1).pdf",
-        type: "pdf"
+        file: "DCIT 26_ Activity 1.docx (1).pdf",
+        type: "pdf",
     },
 
     {
         category: "activities",
         title: "Activity 2",
         description: "My academic activity.",
-        file: "files/DCIT26_ Act 2.docx (1).pdf",
-        type: "pdf"
+        file: "DCIT26_ Act 2.docx (1).pdf",
+        type: "pdf",
     },
 
 
