@@ -71,7 +71,7 @@ const academicWorks = [
         type:
             "image"
     },
-```
+
 
     /* ==============================
        LONG QUIZ
