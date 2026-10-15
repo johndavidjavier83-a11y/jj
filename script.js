@@ -1,4 +1,4 @@
-
+```javascript
 /* =========================================
    ACADEMIC WORKS
    =========================================
@@ -13,23 +13,19 @@
    You are the only person who edits this list.
 */
 
-
 /* =========================================
    ACADEMIC WORKS DATA
 ========================================= */
 
 const academicWorks = [
 
-    /* ==============================
-       QUIZ
-    ============================== */
-
+    // QUIZ
     {
         category: "quiz",
-        title: "quiz 1",
+        title: "Quiz 1",
         description: "My first quiz for this subject.",
-        file: "quiz1.jpeg.JPG"
-        type: "image",
+        file: "files/quiz1.jpeg.JPG",
+        type: "image"
     },
 
     {
@@ -48,11 +44,7 @@ const academicWorks = [
         type: "image"
     },
 
-
-    /* ==============================
-       LONG QUIZ
-    ============================== */
-
+    // LONG QUIZ
     {
         category: "longquiz",
         title: "Long Quiz 1",
@@ -61,11 +53,7 @@ const academicWorks = [
         type: "image"
     },
 
-
-    /* ==============================
-       MIDTERMS
-    ============================== */
-
+    // MIDTERMS
     {
         category: "midterms",
         title: "Midterm Examination",
@@ -74,11 +62,7 @@ const academicWorks = [
         type: "image"
     },
 
-
-    /* ==============================
-       FINALS
-    ============================== */
-
+    // FINALS
     {
         category: "finals",
         title: "Final Examination",
@@ -87,11 +71,7 @@ const academicWorks = [
         type: "image"
     },
 
-
-    /* ==============================
-       ACTIVITIES
-    ============================== */
-
+    // ACTIVITIES
     {
         category: "activities",
         title: "Activity 1",
@@ -108,11 +88,7 @@ const academicWorks = [
         type: "pdf"
     },
 
-
-    /* ==============================
-       PROJECTS
-    ============================== */
-
+    // PROJECTS
     {
         category: "projects",
         title: "Project 1",
@@ -145,29 +121,15 @@ const closeViewerButton = document.getElementById("closeViewer");
 
 
 /* =========================================
-   CHECK REQUIRED HTML ELEMENTS
-========================================= */
-
-if (!container) {
-    console.error(
-        'Missing HTML element: id="works-container".'
-    );
-}
-
-if (!viewer || !viewerBody || !closeViewerButton) {
-    console.error(
-        "Viewer elements are missing. Check viewer, viewerBody, and closeViewer in your HTML."
-    );
-}
-
-
-/* =========================================
    DISPLAY WORKS
 ========================================= */
 
 function displayWorks(category) {
 
-    if (!container) return;
+    if (!container) {
+        console.error('Missing HTML element: works-container');
+        return;
+    }
 
     container.innerHTML = "";
 
@@ -176,17 +138,12 @@ function displayWorks(category) {
     );
 
     if (filteredWorks.length === 0) {
-
         container.innerHTML = `
             <div class="empty">
                 <h3>No works yet</h3>
-                <p>
-                    No academic works are available
-                    in this category.
-                </p>
+                <p>No academic works are available in this category.</p>
             </div>
         `;
-
         return;
     }
 
@@ -195,11 +152,10 @@ function displayWorks(category) {
         const card = document.createElement("div");
         card.className = "work-card";
 
-        /* WORK PREVIEW */
-
         const preview = document.createElement("div");
         preview.className = "work-preview";
 
+        // IMAGE PREVIEW
         if (work.type === "image") {
 
             const img = document.createElement("img");
@@ -213,19 +169,19 @@ function displayWorks(category) {
             });
 
             img.addEventListener("error", () => {
-                img.alt = "Image could not be loaded";
                 img.style.display = "none";
 
                 const errorMessage = document.createElement("p");
                 errorMessage.className = "file-label";
                 errorMessage.textContent =
-                    "Image not found. Check the file path.";
+                    "Image not found. Check the filename and path.";
 
                 preview.appendChild(errorMessage);
             });
 
             preview.appendChild(img);
 
+        // PDF PREVIEW
         } else if (work.type === "pdf") {
 
             const icon = document.createElement("div");
@@ -237,13 +193,13 @@ function displayWorks(category) {
             label.textContent = "PDF Document";
 
             preview.append(icon, label);
-
             preview.style.cursor = "pointer";
 
             preview.addEventListener("click", () => {
                 openViewer(work.file, work.type);
             });
 
+        // OTHER FILES
         } else {
 
             const icon = document.createElement("div");
@@ -257,9 +213,7 @@ function displayWorks(category) {
             preview.append(icon, label);
         }
 
-
-        /* WORK INFORMATION */
-
+        // WORK INFORMATION
         const info = document.createElement("div");
         info.className = "work-info";
 
@@ -293,9 +247,7 @@ function displayWorks(category) {
 
         card.append(preview, info);
         container.appendChild(card);
-
     });
-
 }
 
 
@@ -314,11 +266,8 @@ buttons.forEach(button => {
         button.classList.add("active");
 
         const category = button.dataset.category;
-
         displayWorks(category);
-
     });
-
 });
 
 
@@ -328,14 +277,16 @@ buttons.forEach(button => {
 
 function openViewer(file, type) {
 
-    if (!viewer || !viewerBody) return;
+    if (!viewer || !viewerBody) {
+        console.error("Viewer elements are missing in HTML.");
+        return;
+    }
 
     viewerBody.innerHTML = "";
 
     if (type === "image") {
 
         const img = document.createElement("img");
-
         img.src = file;
         img.alt = "Academic work preview";
 
@@ -353,7 +304,6 @@ function openViewer(file, type) {
     } else if (type === "pdf") {
 
         const iframe = document.createElement("iframe");
-
         iframe.src = file;
         iframe.title = "Academic Document";
         iframe.setAttribute("loading", "lazy");
@@ -377,7 +327,6 @@ function openViewer(file, type) {
 
         message.append(text, link);
         viewerBody.appendChild(message);
-
     }
 
     viewer.classList.add("show");
@@ -386,7 +335,6 @@ function openViewer(file, type) {
     if (closeViewerButton) {
         closeViewerButton.focus();
     }
-
 }
 
 
@@ -400,44 +348,31 @@ function hideViewer() {
 
     viewer.classList.remove("show");
     viewer.setAttribute("aria-hidden", "true");
-
     viewerBody.innerHTML = "";
-
 }
 
 
-/* CLOSE BUTTON */
-
+// CLOSE BUTTON
 if (closeViewerButton) {
-
     closeViewerButton.addEventListener("click", hideViewer);
-
 }
 
 
-/* CLICK OUTSIDE THE VIEWER */
-
+// CLICK OUTSIDE VIEWER
 if (viewer) {
-
     viewer.addEventListener("click", event => {
-
         if (event.target === viewer) {
             hideViewer();
         }
-
     });
-
 }
 
 
-/* ESCAPE KEY */
-
+// ESCAPE KEY
 document.addEventListener("keydown", event => {
-
     if (event.key === "Escape") {
         hideViewer();
     }
-
 });
 
 
@@ -454,3 +389,4 @@ if (quizButton) {
 }
 
 displayWorks("quiz");
+```
