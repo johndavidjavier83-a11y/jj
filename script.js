@@ -29,7 +29,7 @@ const academicWorks = [
         title: "quiz 1",
         description: "My first quiz for this subject.",
         file: "quiz1.jpeg.JPG"
-        type: "JPG"
+        type: "image",
     },
 
     {
