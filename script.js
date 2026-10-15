@@ -28,7 +28,7 @@ const academicWorks = [
         category: "quiz",
         title: "Quiz 1",
         description: "My first quiz for this subject.",
-        file: "quiz1.jpeg.JPG",
+        file: 
         type: "image"
     },
 
