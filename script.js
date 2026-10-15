@@ -66,7 +66,7 @@ const academicWorks = [
             "My third quiz for this subject.",
 
         file:
-            "QUIZ3.jpeg.JPG",
+            "Quiz3.jpeg.jpg",
 
         type:
             "image"
